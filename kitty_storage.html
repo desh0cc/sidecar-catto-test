@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Kitty Storage</title>
+    <script type="module" src="/src/kitty.ts" defer></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <link href="src/styles.css" rel="stylesheet">
+    <link href="src/stylish-kitties.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div data-tauri-drag-region class="titlebar">
+        <div data-tauri-drag-region class="titlebar-left"></div>
+
+        <div data-tauri-drag-region class="titlebar-center">
+            <span data-tauri-drag-region class="title-text">Gallery ● (˶˃ ᵕ ˂˶) .ᐟ.ᐟ</span>
+        </div>
+
+        <div class="titlebar-right">
+            <div class="titlebar-button" id="titlebar-minimize">
+                <iconify-icon icon="mdi:window-minimize" width="20" height="20" style="color: white;"></iconify-icon>
+            </div>
+            <div class="titlebar-button" id="titlebar-maximize">
+                <iconify-icon icon="mdi:window-maximize" width="20" height="20" style="color: white;"></iconify-icon>
+            </div>
+            <div class="titlebar-button" id="titlebar-close">
+                <iconify-icon icon="mdi:window-close" width="20" height="20" style="color: white;"></iconify-icon>
+            </div>
+        </div>
+    </div>
+
+    <a href="index.html">
+      <button class="back-button" style="height: 50px; width: 50px; padding: 5px; background-color: rgb(230, 225, 218);">
+        <iconify-icon icon="material-symbols:arrow-back" width="30" height="30" style="color: rgba(230, 140, 61, 0.697);"></iconify-icon>
+      </button>
+    </a>
+
+    <div class="page">
+
+      <div class="cat-view">
+        <img class="cat-img">
+        <button class="delete-button">
+          <iconify-icon icon="material-symbols:delete-rounded" width="30" height="30"></iconify-icon>
+        </button>
+      </div>
+  
+      <div class="kitties" id="cats-container"></div>
+    </div>
+
+
+  </body>
+</html>

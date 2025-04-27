@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sidecar Test</title>
+    <script type="module" src="/src/main.ts" defer></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <link href="src/styles.css" rel="stylesheet">
+    <meta charset="utf-8">
+  </head>
+
+  <div data-tauri-drag-region class="titlebar">
+    <div data-tauri-drag-region class="titlebar-left"></div>
+
+    <div data-tauri-drag-region class="titlebar-center">
+      <span data-tauri-drag-region class="title-text">(˶˃ ᵕ ˂˶) .ᐟ.ᐟ</span>
+    </div>
+
+    <div class="titlebar-right">
+      <div class="titlebar-button" id="titlebar-minimize">
+        <iconify-icon icon="mdi:window-minimize" width="20" height="20" style="color: white;"></iconify-icon>
+      </div>
+      <div class="titlebar-button" id="titlebar-maximize">
+        <iconify-icon icon="mdi:window-maximize" width="20" height="20" style="color: white;"></iconify-icon>
+      </div>
+      <div class="titlebar-button" id="titlebar-close">
+        <iconify-icon icon="mdi:window-close" width="20" height="20" style="color: white;"></iconify-icon>
+      </div>
+    </div>
+  </div>
+
+  <body style="align-items: center;">
+    <div class="page">
+      <div class="column">
+        <h1 class="title">Sidecar Test</h1>
+  
+        <div class="image-container">
+          <img id="image"/>
+        </div>
+  
+       <div class="button-row">
+          <button id="get-cat" role="button">Згенерувати кота</button>
+          <button id="save-cat" role="button" style="padding: 9px;width: 50px;">
+            <iconify-icon icon="eva:heart-fill" width="20" height="20"></iconify-icon>
+          </button>
+  
+          <div id="heart-overlay" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <iconify-icon icon="eva:heart-fill" width="150" height="150" style="color: rgb(222, 76, 105);"></iconify-icon>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <a href="kitty_storage.html">
+      <button class="saved" style="height: 60px; width: 60px; background-color: rgb(241, 240, 239); border-radius: 10px;">
+        <iconify-icon icon="eva:grid-fill" width="30" height="30" style="color: rgba(230, 140, 61, 0.697);"></iconify-icon>
+      </button>
+    </a>
+    
+  </body>
+</html>

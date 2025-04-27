@@ -1,0 +1,88 @@
+.saved-cat {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    user-select: none;
+}
+
+.back-button {
+    position: fixed;
+    top: 40px;
+    left: 20px;
+    align-self: flex-start;
+    align-content: center;
+    padding-right: 10px;
+    justify-content: center;
+    z-index: 9998;
+}
+
+.back-button:hover {
+    background-color: chocolate;
+}
+
+.kitties {
+    margin-top: 50px;
+    padding: 30px;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    overflow-y: auto;
+    max-height: calc(100vh - 30px);
+}
+  
+
+.cat-item {
+    padding: 10px;
+    background-color: rgb(227, 226, 221);
+    border-radius: 5px;
+    position: relative;
+    transition: all 300ms ease;
+    z-index: 10;
+}
+
+.cat-item:hover {
+    scale: 1.2;
+}
+
+.delete-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    padding: 10px;
+    z-index: 1000;
+    border: 1px solid transparent;
+}
+
+.cat-view {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9998;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 300ms ease;
+}
+
+.empty-space {
+    height: 50px;
+}
+
+.cat-img {
+    max-width: 90vw;
+    max-height: 90vh;
+    min-height: 50vh;
+    min-width: 50vh;
+    object-fit: contain;
+    scale: 0.8;
+    transition: transform 300ms ease;
+    user-select: none;
+}
