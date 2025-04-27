@@ -22,9 +22,11 @@ dist-ssr
 *.sln
 *.sw?
 
-/src-tauri/catto.db
+catto.db
 /src-tauri/binaries
 server-*
 /dist
 /build
-/vscode
+/.vscode
+/src-tauri/target
+/src-tauri/gen/*
